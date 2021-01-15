@@ -30,3 +30,8 @@ a{
 a:hover {
     color: #a293c2;
 }
+
+p {
+    color: white;
+    font-size: 18px;
+}
