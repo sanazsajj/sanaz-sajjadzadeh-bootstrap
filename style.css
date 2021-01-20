@@ -1,37 +1,48 @@
-body {
-    font-family: 'Roboto', sans-serif;
+body {   
+    font-family: 'Roboto', sans-serif; /*Skrivit över den originala typsnittet*/
 }
+
 .container {
-    background-color: #BFB3D7;
-    padding: 30px;
-    max-width: 100%;
+    background-color: #BFB3D7; /*Ändrat backgrundfärgen*/
+    padding: 30px; /*Skrivit över bootstrapens 15px padding*/ 
+    max-width: 100%; /*Skrivit över bootstrapens max-width och ändrat den till 100%*/
+}
+
+.top {
+    margin-top: 40px; /*Lagt till en margin-top då navbaren täckte den första containern.*/
 }
 
 .container2 {
-    background-color: #b2a5ce;
+    background-color: #b2a5ce; /*Skrivit över containerns backgrundfärg på varannan container*/
 }
 
 h1 {
-    color: white;
+    color: white; /*Ändrat färgen på texten till vit*/
 }
 
 nav {
-    display: flex;
+    /*Gjort så att navbaren stannar kvar längst upp trots att man scrollar*/
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    background-color: white; /*Ändrat backgrundfärgen på navbaren till vit*/
+    width: 100%; /*Ändrat bredden till 100%*/
+    display: flex; 
     font-size: 16px;
 }
 
 a{
     margin-left: 2%;
-    color: #a293c2;
+    color: #a293c2; /*Skrivit över bootstrapens blåa färg*/
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 a:hover {
-    color: #a293c2;
+    color: #a293c2; /*Skrivit över bootstrapens blåa färg*/
 }
 
 p {
-    color: white;
-    font-size: 18px;
+    color: white; /*Ändrat färgen på texten till vit*/
+    font-size: 18px; 
 }
